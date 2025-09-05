@@ -16,10 +16,10 @@ app.use(express.json())
 
 
 // Rutas
-app.use('/api/usuarios', usuarioRoutes);
-app.use('/api/scooters', scooterRoutes);
-app.use('/api/rentas', rentaRoutes);
-app.use('/api/usuarios/auth', authRoutes);
+app.use('/usuarios', usuarioRoutes);
+app.use('/scooters', scooterRoutes);
+app.use('/rentas', rentaRoutes);
+app.use('/auth', authRoutes);
 
 // Manejo de errores
 app.use((err, req, res, next) => {
